@@ -1,0 +1,55 @@
+armar dos tablas relacion:
+
+autores y libros.
+
+relacion: 3 libros pueden tener el mismo autor.
+
+Modelo MVC.
+
+URLS deben ser semanticas y estar establecido el ruteo.
+
+Utilizar smarty para los html.
+
+
+
+Pestañas y cosas a hacer:
+
+1°home:
+
+Presentacion pagina de libros.
+
+listado de los items cargados.
+
+1.2°cada item se puede visualizar en su propia pagina.
+
+2° Categorias (autores)
+
+presentacion sobre pestaña de autores
+
+listado de las categorias cargadas
+(no se pueden borrar autores que tengan uno o 
+varios libros vinculados).
+
+
+3° Filtrar por categoria
+
+Elegir con un select las categorias,
+y estas mostraran los libros de esa categoria/autor.
+(con un INNER JOIN).
+
+4° Seccion Login.
+
+para logearse, al hacerlo se puede añadir,
+eliminar o editar un item/categoria.
+
+la categoria tendra un try catch que mostrara
+error si se intenta borrar una vinculada a un/unos
+libros.
+
+habra un timeout que luego de x minutos deslogueará.
+
+Al agregar items/libros, se elige la categoria a la
+que estará vinculada.
+
+
+5° Subir foto al crear item o categoria(libro o autor)
