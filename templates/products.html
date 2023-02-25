@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1984</title>
+    <link rel="shortcut ico" href="ico.ico">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/637687.jpg" alt="logo">
+        </div>
+        <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="contact.html">Contactos</a></li>
+                </ul>
+        </nav>
+        <div class="responsive-button">
+            <a href="#"><button id="hidden-button"><img src="images/menu.png" alt="responsive-menu"></button></a>
+        </div>
+   
+    </header>
+
+    <div class="main-img">
+        <img src="images/descarga.png" alt="harry"> 
+     </div>
+
+     <section class="table-section">
+
+        <div class="tablecointainer">
+
+            <div>
+                <p>aqui podra ver una tabla con los principales libros</p>
+            </div>
+
+    
+
+            <form id="form-filter">
+                <label>Campo a Filtrar</label>
+                    <select name="select">
+                        <option value="name">Nombre</option>
+                        <option value="price">Precio</option>
+                        <option value="year">Año</option>
+                    </select>
+                    <label>Texto a Filtrar</label>
+                    <input name="text-search" type="text">
+                    <button type="submit">Search</button>
+            </form>
+
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>nombre</th>
+                        <th>año lanzamiento</th>
+                        <th>precio</th>
+                        <th>ID</th>
+                        <th>editar/eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="dynamic-table">
+
+                </tbody>
+
+                <div class="buttons">
+                    <button id="previus">Previus</button>
+                    <button id="next">Next</button>
+                </div>    
+                   
+            </table>
+
+            <div class="center">
+                <div class="form-table">
+                    <form id="form-tab">
+                        <label>Nombres</label>
+                        <input type="text" name="names">
+                        <label>Año Lanzamiento</label>
+                        <input type="number" name="year">
+                        <label>Precio</label>
+                        <input type="number" name="price">
+                        <button type="submit">Añadir</button>
+                        <button id="three" type="submit">Añadir 3</button>
+                    </form> 
+                </div>
+            </div>
+           
+
+        </div>
+
+
+     </section>
+
+    
+     <footer>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptas aliquam explicabo in, debitis, consectetur quis perferendis et id recusandae esse harum dolore provident ipsam deserunt at ad. Rerum, temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi quam veritatis quaerat laudantium suscipit porro recusandae iste qui laborum, pariatur vitae vel, amet inventore corrupti magnam debitis dolorum facere. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tenetur maxime sint sequi fugiat minus, porro quo omnis veniam dignissimos voluptatibus repellat quam saepe nemo. Nisi fugiat iusto magni tenetur.
+        </p>
+    </footer>
+    
+
+    <script src="JS/script2.js"></script>
+    <script src="JS/responsive.js"></script> 
+
+</body>
+</html>
