@@ -11,13 +11,15 @@ class BookController {
 
     public function __construct() {
 
-        //$this->model = new BookModel();
+        $this->model = new BookModel();
         $this->view = new BookView();
 
     }
 
     public function showHome() {
-        $this->view->showHome();
+
+        $books = $this->model->getAllBooks();
+        $this->view->showHome($books);
     }
 
 

@@ -12,8 +12,9 @@
 
         //ver home
 
-        function showHome() {
+        function showHome($books) {
 
+            $this->smarty->assign('books', $books);
             $this->smarty->display('templates/showHome.tpl');
 
         }

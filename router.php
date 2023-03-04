@@ -22,5 +22,9 @@ switch($params[0]) {
     case 'home':
         $bookController = new BookController();
         $bookController->ShowHome();
-
+        break;
+    default:
+    echo('404 Page not found');
+    break;
+            
 }
