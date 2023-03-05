@@ -21,15 +21,18 @@ switch($params[0]) {
 
     case 'home':
         $bookController = new BookController();
-        $bookController->ShowBooks();
+        $bookController->showBooks();
         break;
     case 'book':
         $bookController = new BookController();
         if(!empty($params[1])) {
             $id = $params[1];
-            $bookController->ShowBookById($id);
+            $bookController->showBookById($id);
         }
-
+        break;
+    case 'author':
+        $authorController = new AuthorController();
+        $authorController->showAllAuthors();
         break;
     default:
     echo('404 Page not found');

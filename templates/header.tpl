@@ -21,8 +21,9 @@
         <nav>
                 <ul class="nav-links">
                     <li><a href="home">Home</a></li>
-                    <li><a href="home">Productos</a></li>
-                    <li><a href="home">Contactos</a></li>
+                    <li><a href="author">Autores</a></li>
+                    <li><a href="home">Buscar Por Author</a></li>
+                    <li><a href="home">Login</a></li>
                 </ul>
         </nav>
         <div class="responsive-button">
