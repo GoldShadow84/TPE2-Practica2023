@@ -16,11 +16,16 @@ class BookController {
 
     }
 
-    public function showHome() {
+    public function showBooks() {
 
         $books = $this->model->getAllBooks();
         $this->view->showHome($books);
     }
 
+    public function showBookById($id) {
 
+        $book = $this->model->getBookById($id);
+        $this->view->showBookById($book);
+
+    }
 }

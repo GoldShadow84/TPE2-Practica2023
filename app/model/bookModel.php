@@ -19,5 +19,14 @@ class BookModel {
             return $books;
     }
 
+    public function getBookById($id) {
+        $query = $this->db->prepare("SELECT * FROM books WHERE id_book = ?");
+        $query->execute([$id]);
+        $books = $query->fetchAll(PDO::FETCH_OBJ);
+
+
+        return $books;
+    }
+
 
 }

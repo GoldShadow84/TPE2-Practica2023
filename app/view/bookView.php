@@ -19,5 +19,11 @@
 
         }
 
+        function showBookById($book) {
+
+            $this->smarty->assign('book', $book);
+            $this->smarty->display('templates/showBookById.tpl');
+
+        }
 
     }
