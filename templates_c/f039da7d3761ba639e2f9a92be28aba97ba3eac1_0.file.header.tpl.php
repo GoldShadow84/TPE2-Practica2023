@@ -1,7 +1,31 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 4.3.0, created on 2023-03-05 16:29:14
+  from 'C:\xampp\htdocs\TPE1\templates\header.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_6404b54aed4ef2_49088941',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f039da7d3761ba639e2f9a92be28aba97ba3eac1' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\TPE1\\templates\\header.tpl',
+      1 => 1678029923,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6404b54aed4ef2_49088941 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="{$basehref}">
+    <base href="<?php echo $_smarty_tpl->tpl_vars['basehref']->value;?>
+">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,4 +53,5 @@
             <a href="#"><button id="hidden-button"><img src="images/menu.png" alt="responsive-menu"></button></a>
         </div>
    
-    </header>
+    </header><?php }
+}

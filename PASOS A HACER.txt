@@ -10,6 +10,17 @@ URLS deben ser semanticas y estar establecido el ruteo.
 
 Utilizar smarty para los html.
 
+tablas {
+
+books: tendra nombre, genero, imagen, id de book, id fk de author.
+
+indices: primario de la id principal de book, id_author_fk
+
+authors: tendra nombre, edad, id del autor.
+
+indice: id del autor.
+
+}
 
 
 Pestañas y cosas a hacer:
