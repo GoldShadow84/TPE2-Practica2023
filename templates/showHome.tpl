@@ -8,10 +8,10 @@
     <ul>
 
     {foreach $books as $book}
-    <li>    
+         <li>    
         Nombre:
 
-        {$book->name}
+        <a href="book/{$book->id_book}">  {$book->name}   </a>
 
         -
 
@@ -20,7 +20,10 @@
         {$book->genre}
 
       
-    </li>
+    </li>  
+
+    
+
       {/foreach} 
 
     </ul>
