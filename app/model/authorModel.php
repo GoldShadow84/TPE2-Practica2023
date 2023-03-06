@@ -20,6 +20,14 @@
             return $authors;
         }
 
+        public function getAllBooksByAuthor($id) {
+            $query = $this->db->prepare('SELECT * FROM books JOIN authors ON books.id_book = authors.id_author WHERE id_author = ?');
+            $query->execute([$id]);
+
+            $books = $query->fetchAll(PDO::FETCH_OBJ);
+
+            return $books;
+        }
 
 
     }

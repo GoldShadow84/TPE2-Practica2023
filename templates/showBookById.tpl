@@ -8,7 +8,7 @@
         <ul>
         
             {foreach $book as $books}
-            <li>Nombre: {$books->name} </li>
+            <li>Nombre: {$books->book_name} </li>
             <li> Genero: {$books->genre} </li>
             {/foreach}
 

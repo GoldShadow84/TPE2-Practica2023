@@ -16,4 +16,19 @@
 
         }
 
+        public function searchBookByAuthor($authors) {
+
+            $this->smarty->assign('authors', $authors);
+            $this->smarty->display('templates/filterForm.tpl');
+
+        
+        }
+
+        public function showAllBooksByAuthor($books) {
+
+            $this->smarty->assign('books', $books);
+            $this->smarty->display('templates/showBooksByAuthor.tpl');
+
+        }
+
     }

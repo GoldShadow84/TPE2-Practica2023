@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-05 18:33:32
+/* Smarty version 4.3.0, created on 2023-03-05 21:20:14
   from 'C:\xampp\htdocs\TPE1\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6404d26c284531_29180444',
+  'unifunc' => 'content_6404f97e1c2450_85479130',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f039da7d3761ba639e2f9a92be28aba97ba3eac1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\TPE1\\templates\\header.tpl',
-      1 => 1678037539,
+      1 => 1678044379,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6404d26c284531_29180444 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6404f97e1c2450_85479130 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +46,7 @@ function content_6404d26c284531_29180444 (Smarty_Internal_Template $_smarty_tpl)
                 <ul class="nav-links">
                     <li><a href="home">Home</a></li>
                     <li><a href="author">Autores</a></li>
-                    <li><a href="home">Buscar Por Author</a></li>
+                    <li><a href="bookbyauthor">Buscar Por Author</a></li>
                     <li><a href="home">Login</a></li>
                 </ul>
         </nav>

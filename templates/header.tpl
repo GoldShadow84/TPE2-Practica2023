@@ -22,7 +22,7 @@
                 <ul class="nav-links">
                     <li><a href="home">Home</a></li>
                     <li><a href="author">Autores</a></li>
-                    <li><a href="home">Buscar Por Author</a></li>
+                    <li><a href="bookbyauthor">Buscar Por Author</a></li>
                     <li><a href="home">Login</a></li>
                 </ul>
         </nav>

@@ -11,7 +11,7 @@
          <li>    
         Nombre:
 
-        <a href="book/{$book->id_book}">  {$book->name}   </a>
+        <a href="book/{$book->id_book}">  {$book->book_name}   </a>
 
         -
 

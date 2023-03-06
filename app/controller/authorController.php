@@ -23,5 +23,27 @@
 
         }
 
+        public function searchBookByAuthor() {
+
+            $authors = $this->model->getAllAuthors();
+            $this->view->searchBookByAuthor($authors);
+
+        }
+
+        public function getAllBooksByAuthor() {
+
+            if(!empty($_GET['choice']) && isset($_GET['choice'])) {
+
+                
+                $id = $_GET['choice'];
+
+                $books = $this->model->getAllBooksByAuthor($id);
+                $this->view->showAllBooksByAuthor($books);
+
+
+            }
+
+        }
+
 
     }

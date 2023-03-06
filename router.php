@@ -34,6 +34,14 @@ switch($params[0]) {
         $authorController = new AuthorController();
         $authorController->showAllAuthors();
         break;
+    case 'bookbyauthor':
+        $authorController = new AuthorController();
+        $authorController->searchBookByAuthor();
+        break;
+    case 'filter':
+        $authorController = new AuthorController();
+            $authorController->getAllBooksByAuthor();
+        break;
     default:
     echo('404 Page not found');
     break;
