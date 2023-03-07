@@ -12,6 +12,8 @@
 
     </ul>
 
+        <a href="bookbyauthor">Volver</a>
+
 
 
     {include 'templates/footer.tpl'}
