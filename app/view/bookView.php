@@ -12,9 +12,11 @@
 
         //ver home
 
-        function showHome($books) {
+        function showHome($books, $authors) {
 
             $this->smarty->assign('books', $books);
+            $this->smarty->assign('authors', $authors);
+
             $this->smarty->display('templates/showHome.tpl');
 
         }
@@ -24,6 +26,11 @@
             $this->smarty->assign('book', $book);
             $this->smarty->display('templates/showBookById.tpl');
 
+        }
+
+        function showEmptyError() {
+
+            $this->smarty->display('templates/showEmptyError.tpl');
         }
 
     }

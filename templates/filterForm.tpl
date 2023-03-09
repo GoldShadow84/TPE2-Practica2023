@@ -9,7 +9,7 @@
 
         {foreach $authors as $author}
  
-        <option value="{$author->id_author}">{$author->name}</value>
+        <option value="{$author->id_author}">{$author->name}</option>
         {/foreach}
 
     </select>

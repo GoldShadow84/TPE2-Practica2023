@@ -40,8 +40,19 @@ switch($params[0]) {
         break;
     case 'filter':
         $authorController = new AuthorController();
-            $authorController->getAllBooksByAuthor();
+        $authorController->getAllBooksByAuthor();
         break;
+    case 'add':
+        $bookController = new BookController();
+        $bookController->addNewBooK();
+        break;
+    case 'delete':
+        $bookController = new BookController();
+        if(!empty($params[1])) {
+            $id = $params[1];
+            $bookController->deleteBook($id);  
+        }
+      
     default:
     echo('404 Page not found');
     break;

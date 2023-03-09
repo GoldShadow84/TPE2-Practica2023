@@ -198,6 +198,15 @@ table th {
 
 }
 
+#contactform input {
+    width: 8em;
+}
+
+.book-list-container {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
 
 @media only screen and (min-width: 660px) {
 
