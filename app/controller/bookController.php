@@ -55,5 +55,29 @@ class BookController {
         $this->showBooks();
 
     }
+
+    public function updateForm($id) {
+
+        $authors = $this->model->getAllAuthors();
+        $this->view->updateForm($id, $authors);
+    }
     
+    public function updateBook() {
+
+        if(!empty($_POST['names']) && isset($_POST['names']) && !empty($_POST['genre']) && isset($_POST['genre']) && !empty($_POST['choice']) && isset($_POST['choice']) &&  !empty($_POST['choice']) && isset($_POST['choice'])) {
+
+            $names = $_POST['names'];
+            $genre = $_POST['genre'];
+            $choice = $_POST['choice'];
+            $id = $_POST['ID'];
+
+            $this->model->updateBook($names, $genre, $choice, $id);
+            $this->showBooks();
+        }
+        else {
+            $this->view->showEmptyError();
+        }
+
+    }
+
 }

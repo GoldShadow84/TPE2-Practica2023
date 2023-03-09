@@ -33,4 +33,13 @@
             $this->smarty->display('templates/showEmptyError.tpl');
         }
 
+        function updateForm($id = null, $authors = null) {
+
+            $this->smarty->assign('authors', $authors);
+            $this->smarty->assign('id', $id);
+            $this->smarty->display('templates/updateForm.tpl');
+
+
+        }
+
     }

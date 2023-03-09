@@ -24,6 +24,7 @@
     </li>  
 
       <button type="submit"><a href="delete/{$book->id_book}">Borrar</a></button>
+      <button type="submit"><a href="updateForm/{$book->id_book}">Editar</a></button>
 
       {/foreach} 
 

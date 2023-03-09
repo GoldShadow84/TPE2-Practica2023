@@ -52,6 +52,17 @@ switch($params[0]) {
             $id = $params[1];
             $bookController->deleteBook($id);  
         }
+    case 'updateForm':
+        $bookController = new BookController();
+        if(!empty($params[1])) {
+            $id = $params[1];
+            $bookController->updateForm($id);  
+        }
+        break;   
+    case 'update':
+        $bookController = new BookController();
+        $bookController->updateBook();
+        break;
       
     default:
     echo('404 Page not found');

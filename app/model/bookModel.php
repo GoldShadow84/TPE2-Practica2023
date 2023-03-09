@@ -52,6 +52,12 @@ class BookModel {
 
     }
 
+    public function updateBook($names = null, $genre = null, $choice = null, $id = null) {
+
+        $query = $this->db->prepare('UPDATE books SET book_name = ?, genre = ?, id_author_fk = ? WHERE id_book = ?');
+        $query->execute([$names, $genre, $choice, $id]);
+
+    }
     
 
 }
